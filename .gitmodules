@@ -1,0 +1,12 @@
+[submodule "Flutter/FHW"]
+	path = Flutter/FHW
+	url = https://github.com/rel1nce/FHW.git
+[submodule "Flutter/Expenny"]
+	path = Flutter/Expenny
+	url = https://github.com/rel1nce/Expenny.git
+[submodule "Flutter/Melap"]
+	path = Flutter/Melap
+	url = https://github.com/rel1nce/Melap.git
+[submodule "Flutter/MiniWeather"]
+	path = Flutter/MiniWeather
+	url = https://github.com/rel1nce/MiniWeather.git
