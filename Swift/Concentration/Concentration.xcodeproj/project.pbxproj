@@ -13,6 +13,8 @@
 		F46815FB2A1140F70091C6E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F46815F92A1140F70091C6E0 /* Main.storyboard */; };
 		F46815FD2A1140F80091C6E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F46815FC2A1140F80091C6E0 /* Assets.xcassets */; };
 		F46816002A1140F80091C6E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F46815FE2A1140F80091C6E0 /* LaunchScreen.storyboard */; };
+		F4C754E72A124EA50045D12D /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C754E62A124EA50045D12D /* Card.swift */; };
+		F4C754E92A124ECC0045D12D /* ConcentrationGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C754E82A124ECC0045D12D /* ConcentrationGame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		F46815FC2A1140F80091C6E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F46815FF2A1140F80091C6E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F46816012A1140F80091C6E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4C754E62A124EA50045D12D /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		F4C754E82A124ECC0045D12D /* ConcentrationGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentrationGame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +44,8 @@
 		F46815E72A1140F70091C6E0 = {
 			isa = PBXGroup;
 			children = (
+				F4C754E82A124ECC0045D12D /* ConcentrationGame.swift */,
+				F4C754E62A124EA50045D12D /* Card.swift */,
 				F46815F22A1140F70091C6E0 /* Concentration */,
 				F46815F12A1140F70091C6E0 /* Products */,
 			);
@@ -140,7 +146,9 @@
 			files = (
 				F46815F82A1140F70091C6E0 /* ViewController.swift in Sources */,
 				F46815F42A1140F70091C6E0 /* AppDelegate.swift in Sources */,
+				F4C754E92A124ECC0045D12D /* ConcentrationGame.swift in Sources */,
 				F46815F62A1140F70091C6E0 /* SceneDelegate.swift in Sources */,
+				F4C754E72A124EA50045D12D /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
