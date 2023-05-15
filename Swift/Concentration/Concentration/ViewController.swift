@@ -21,6 +21,19 @@ class ViewController: UIViewController {
         return emojiDictionary[card.identifier] ?? "?"
     }
     
+    func isGameOver() -> Bool {
+        for card in game.cards {
+            if card.isMatched == false {
+                return false;
+            }
+        }
+        return true;
+    }
+    
+    func gameOver() {
+        touchLabel.text = "You Won! Total: \(touches)"
+    }
+    
     func updateViewFromModel() {
         for index in buttonCollection.indices {
             let button = buttonCollection[index]
@@ -36,9 +49,9 @@ class ViewController: UIViewController {
         }
         
     }
-
+    
     @IBOutlet var buttonCollection: [UIButton]!
-
+    
     @IBOutlet weak var touchLabel: UILabel!
     
     @IBAction func buttonAction(_ sender: UIButton) {
@@ -47,6 +60,31 @@ class ViewController: UIViewController {
             game.chooseCard(at: buttonIndex)
             updateViewFromModel()
         }
+        if isGameOver() {
+            gameOver()
+            showRestartButton(button: restartButton)
+        }
     }
+    
+    func showRestartButton(button sender: UIButton) {
+        sender.isEnabled = true
+        sender.isHidden = false
+    }
+    
+    func hideRestartButton(button sender: UIButton) {
+        sender.isEnabled = false
+        sender.isHidden = true
+    }
+    
+    @IBOutlet weak var restartButton: UIButton!
+    
+    @IBAction func restartButton(_ sender: UIButton) {
+        sender.isEnabled = false
+        sender.isHidden = true
+        game = ConcentrationGame(numberOfPairsOfCards: (buttonCollection.count + 1) / 2)
+        emojiCollection = ["🐭", "🐵", "🐹", "🦊", "🐨", "🐻", "🦄", "🐸", "🐤", "🐻‍❄️"]
+        touches = 0
+    }
+    
 }
 
